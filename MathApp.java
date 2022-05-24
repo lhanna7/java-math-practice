@@ -1,31 +1,43 @@
 public class MathApp {
   public static void main(String[] args) {
+    MathApp.findMax(30_000, 100_000);
+    MathApp.findMin(30_000, 100_000);
+    MathApp.getRadius(7.25);
+    MathApp.findSqRt(5);
+    MathApp.findDistance(5, 10, 85, 50);
+    MathApp.getAbs(-3.8);
+    MathApp.pickRandom();
+  }
 
-    int job1Salary = 70_000;
-    int job2Salary = 90_000;
+  private static void findMax(int job1Salary, int job2Salary) {
     System.out.println(Math.max(job1Salary, job2Salary));
+  }
 
-    int carPrice = 30_000;
-    int truckPrice = 100_000;
+  private static void findMin(int carPrice, int truckPrice) {
     System.out.println(Math.min(carPrice, truckPrice));
+  }
 
-    double circleRadius = 7.25;
+  private static void getRadius(double circleRadius) {
     System.out.println(Math.PI * circleRadius * circleRadius);
+  }
 
-    double sqRoot = 5.0;
+  private static void findSqRt(double sqRoot) {
     System.out.println(Math.sqrt(sqRoot));
+  }
 
-    double x1 = 5;
-    double y1 = 85;
-    double x2 = 10;
-    double y2 = 50;
+  private static void findDistance(double x1, double x2, double y1, double y2) {
     double xDiff = Math.abs(x2 - x1);
     double yDiff = Math.abs(y2 - y1);
     System.out.println(Math.hypot(xDiff, yDiff));
-
-    double num2 = -3.8;
-    System.out.println(Math.abs(num2));
-
-    System.out.println(Math.random());
   }
+
+  private static void getAbs(double num2) {
+    System.out.println(Math.abs(num2));
+  }
+
+  private static void pickRandom() {
+    System.out.println(Math.random());
+
+  }
+
 }
